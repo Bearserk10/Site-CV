@@ -1,0 +1,27 @@
+.nav{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $color_primaire;
+    
+    &__liste{
+        display: flex; 
+       justify-content: space-evenly;
+       &__txt{
+        color: $color_tertiaire;
+       }
+    }
+}
+
+@media screen and (max-width:767px){
+    .nav{
+        &__liste{
+            justify-content:space-evenly;
+            &__txt{
+                font-size: 12px
+            }
+        }
+    }
+    ul{
+        padding-inline-start: 0px;
+    }
+}

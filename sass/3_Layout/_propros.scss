@@ -1,0 +1,178 @@
+.Nom{
+    font-size: 26px;
+}
+.autre{
+    font-size: 14px;
+}
+
+
+.sectionpropos{
+    display: flex;
+    &__img{
+        width: 70%;
+        &__plac{
+        width:100%;
+        object-fit: cover;
+        height: 500px;
+        overflow: hidden;
+        }
+    }
+    &__contact{
+        width: 30%;
+        height: 500px;
+        background-color: $color_primaire;
+        text-align: center;
+        &__img{
+            margin-top: 30px;
+            margin-left: 5%;
+            width: 50%;
+            object-fit:contain;
+            height: 150px; 
+        }
+        &__txt{
+            
+            margin:30px 10% 0 5%;
+            color: $color_tertiaire;
+            font-size: 20px;
+            &__align{
+                margin-top: 10px;
+            }
+        }
+        &__button{
+            margin-top: 50px;
+            margin-left: 5%;
+            padding: 15px 20px;
+            background-color: $color_tertiaire;
+            color: $color_primaire;
+        }
+    }   
+}
+
+.sectiontxt{
+    background-color: $color_secondaire;
+    margin-top: -25px;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    
+    &__box{
+        &__titre{
+            text-align: left;
+            margin-left: 25%;
+            color: $color_primaire;
+            
+            &__h2{
+                margin-top: 50px;
+                font-size: 30px;
+            }
+            &__h3{
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+        &__présentation{
+        
+            margin: 50px 25% 0 25%;
+            text-align: left;
+            font-size: 20px;
+            line-height: 35px;
+            word-spacing: 5px
+        }
+    }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .sectionpropos{
+        flex-direction: column;
+        &__img{
+            width: 100%!important; 
+        }
+        &__contact{
+            display: flex;
+            width: 100%!important;
+            height: 300px!important;
+            margin-top: -5px;
+            &__img{
+                align-self: center;
+                margin:0 0 0 5%!important;
+                width: 20%!important;
+                height: 200px!important;
+            }
+            &__txt{
+                
+                margin: 60px 10% 0 10%!important;
+                text-align: left;
+            }
+            &__button{
+                margin-top: 150px!important;
+                margin-right: 5%!important;
+            }
+        }
+        
+    }
+    .sectiontxt{
+        &__box{
+            &__titre{
+                margin-left: 15%;
+            }
+            &__présentation{
+        
+                margin: 50px 15% 0 15%;
+                text-align: left;
+                font-size: 20px;
+                line-height: 35px;
+                word-spacing: 5px
+            }
+    }
+}
+}
+@media screen and (max-width:767px){
+.sectionpropos{
+        
+        flex-direction: column;
+        &__img{
+            width: 100%!important;
+            height: 400px; 
+        }
+        &__contact{
+            display: flex;
+            flex-direction: column;
+            width: 100%!important;
+            height: 500px!important;
+            margin-top: -5px;
+            &__img{
+                align-self: center;
+                width: 200px;
+                height: 200px!important;
+            }
+            &__txt{
+                align-self: center;
+                margin: 10px 0 0 0!important;
+                text-align: left;
+            }
+            &__button{
+                align-self: center;
+                margin-left: 15px!important;
+                margin-top: 30px!important;
+                
+            }
+        }
+        
+    }
+    .sectiontxt{
+        &__box{
+            &__titre{
+                margin-left: 10%;
+            }
+            &__présentation{
+        
+                margin: 50px 10% 0 10%;
+                text-align: left;
+                font-size: 20px;
+                line-height: 35px;
+                word-spacing: 5px
+            }
+    }
+}
+}

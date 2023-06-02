@@ -1,0 +1,202 @@
+.parcours{
+    background-color: $color_secondaire;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    padding-bottom: 75px;
+    
+    
+    &__experience{
+        margin-left: 15%;
+    }
+
+    &__h2{
+        color: $color_primaire;
+        font-size: 30px;
+        margin-top: 100px;
+    }
+    &__h3{
+        color: $color_primaire;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 30px;
+
+    }
+    &__txt{
+        margin-left: -40px;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+}
+
+.competence{
+    background-color: $color_secondaire;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    &__h2{
+        text-align: left;
+        margin:0 0 20px 25%;
+        color: $color_primaire;
+    }
+    &__h3{
+        text-align: left;
+        margin-left: 25%;
+        color: $color_primaire;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    &__inf{
+
+        &__align{
+            text-align: left;
+            align-items: center;
+            margin-left: 25%;
+            &__barre{
+                display: flex;
+                margin: 20px 0 40px 50px;
+                width: 60%;
+                color: $color_primaire;
+            }
+        }
+    }
+    &__softskill{
+        margin-top: 100px;
+        &__align{
+            text-align: left;
+            align-items: center;
+            margin-left: 25%;
+            &__barre{
+                display: flex;
+                margin: 20px 0 40px 50px;
+                width: 60%;
+                color: $color_primaire;
+            }
+        }
+
+    }
+}
+
+progress{
+    color: $color_primaire;
+}
+
+.projets{
+    background-color: $color_secondaire;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    &__h2{
+        color: $color_primaire;
+        margin-left: 25%;
+        text-align: left;
+    }
+    &__h3{
+        color: $color_primaire;
+        font-size: 16px;
+        font-weight: 300;
+        margin-left: 25%;
+        text-align: left;
+    }
+    &__button{
+        margin-top: 50px;
+        padding: 0px 20px;
+        color: #fff;
+        background-color:$color_primaire;
+        border-color: $color_primaire;
+        &__txt{
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .parcours{
+        flex-direction: column;
+        &__scolarite{
+            margin-left: 15%;
+        }
+    }
+    .competence{
+        &__h2{
+            margin-left: 15%;
+        }
+        &__h3{
+            margin-left: 15%;
+        }
+        &__inf{
+            &__align{
+                margin-left: 15%;
+                &__barre{
+                width: 70%!important;
+            }
+            }
+            
+        }
+        &__softskill{
+            &__align{
+                margin-left: 15%;
+                &__barre{
+                    width: 70%!important;
+                }
+            }
+        }
+    } 
+    .projets{
+        &__h2{
+            margin-left: 15%;
+        }
+        &__h3{
+            margin-left: 15%;
+        }
+    }  
+}
+
+@media screen and (max-width:767px){
+    .parcours{
+        flex-direction: column;
+        &__scolarite{
+            margin-left: 10%;
+        }
+        &__txt{
+            margin-left: 0%;
+           
+        }
+        &__experience{
+            margin-left: 10%;
+        }
+    }
+    .competence{
+        &__h2{
+            margin-left: 10%;
+        }
+        &__h3{
+            margin-left: 10%;
+        }
+        &__inf{
+            &__align{
+                margin-left: 10%;
+                &__barre{
+                width: 80%!important;
+            }
+            }
+            
+        }
+        &__softskill{
+            &__align{
+                margin-left: 10%;
+                &__barre{
+                    width: 80%!important;
+                }
+            }
+        }
+    } 
+    .projets{
+        &__h2{
+            margin-left: 10%;
+        }
+        &__h3{
+            margin-left: 10%;
+        }
+    }  
+}
